@@ -1,6 +1,5 @@
 on:                                       # triggering conditions
-  workflow_dispatch:
-  pull_request:
+  pull_request:                           # on a pull request which targets main...
     branches:
     - main
 
@@ -18,8 +17,8 @@ jobs:                                     # this is just the start of the pipeli
       with:
         python-version: '3.13' 
     
-    - name: try to install pylint
+    - name: install pylint
       run: python -m pip install pylint
 
-    - name: did pylint install?
-      run: pylint --version
+    - name: run pylint against our python files
+      run: pylint *.py
