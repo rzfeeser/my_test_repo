@@ -4,6 +4,7 @@
 def main():
     """runtime code"""
     print("Welcome to BatmanAPI")
+    print("this will fail there is no prrrrrnt")
 
 if __name__ == "__main__":
     main()
