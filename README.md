@@ -1,95 +1,51 @@
 # batmanAPI
 
-A fun Python project that interacts with a fictional Gotham City API to retrieve information about Batman villains, gadgets, vehicles, locations, and quotes.
+A minimal Python command-line project that displays a welcome message.
 
+## About
 
-## Table of Contents
+This repository contains a small Python script (`main.py`) that prints a single line when executed:
 
-- About the Project  
-- Features  
-- How It Works  
-- Technologies Used  
-- Installation  
-- Usage  
-- Example Output  
-- Project Structure  
-- Roadmap  
-- Contributing  
-- License  
-- Author  
+- "Welcome to BatmanAPI"
 
+It is a starter/demo project with no external dependencies.
 
-## About the Project
+## Project structure
 
-batmanAPI.py is a beginner-friendly Python application designed to simulate working with an API in a fun and memorable way. Instead of using generic data, this project focuses on Gotham City content.
+- `main.py` — application entry point
+- `README.md` — project documentation
 
+## Requirements
 
-## Features
-
-- Search for Batman villains  
-- List Bat gadgets and vehicles  
-- Display Gotham City locations  
-- Return Batman quotes  
-
-
-## How It Works
-
-The app sends a request to a fictional API and displays results in the terminal.
-
-
-## Technologies Used
-
-- Python 3  
-- Requests  
-- JSON  
-- GitHub  
-
+- Python 3.7+
 
 ## Installation
 
-    git clone https://github.com/your-username/batmanAPI.py.git
-    cd batmanAPI.py
-    pip install requests
+Clone the repository and run the script:
 
+```bash
+git clone https://github.com/rzfeeser/my_test_repo.git
+cd my_test_repo
+```
 
 ## Usage
 
-    python batmanAPI.py
+```bash
+python main.py
+```
 
+Expected output:
 
-## Example Output
+```text
+Welcome to BatmanAPI
+```
 
-    Welcome to Gotham City Data Terminal
-    1. Villains
-    2. Gadgets
-    3. Vehicles
+## Notes
 
-
-## Project Structure
-
-    batmanAPI.py/
-    ├── README.md
-    ├── batmanAPI.py
-    └── requirements.txt
-
-
-## Roadmap
-
-- Create repository  
-- Build README  
-- Add Python script  
-
-
-## Contributing
-
-Contributions are welcome.
-
+- There are no API calls or extra features implemented in this repository yet.
+- You can extend this template by adding new functions, modules, and tests as needed.
 
 ## License
 
-Educational use.
+See `LICENSE` for licensing details.
 
-
-## Author
-
-Alta3 Research Training Project
