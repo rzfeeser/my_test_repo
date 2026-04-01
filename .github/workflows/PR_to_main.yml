@@ -1,0 +1,25 @@
+on:                                       # triggering conditions
+  workflow_dispatch:
+  pull_request:
+    branches:
+    - main
+
+jobs:                                     # this is just the start of the pipeline
+  lint_python:                            # this is a job in our pipeline
+    name: Lint python code in branch targeting main during PR
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: copies code from the repo into our pipeline environment 
+      uses: actions/checkout@v6
+    
+    - name: install python
+      uses: actions/setup-python@v6
+      with:
+        python-version: '3.13' 
+    
+    - name: try to install pylint
+      run: python -m pip install pylint
+
+    - name: did pylint install?
+      run: pylint --version
