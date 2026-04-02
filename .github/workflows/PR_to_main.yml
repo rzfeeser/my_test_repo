@@ -1,11 +1,11 @@
-on:                                       # triggering conditions
-  workflow_dispatch: 
-  pull_request:                           # on a pull request which targets main...
+on:
+  workflow_dispatch:
+  pull_request:
     branches:
-    - main
+      - main
     paths-ignore:
-    - README.md
-    - '.github/**'
+      - README.md
+      - .github/**
 
 jobs:                                     # this is just the start of the pipeline
   lint_python:                            # this is a job in our pipeline
