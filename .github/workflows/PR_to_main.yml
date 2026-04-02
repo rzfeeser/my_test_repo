@@ -1,7 +1,6 @@
 name: Running pylint on python files
 
-#on:                                       # triggering conditions
-off:
+on:                                       # triggering conditions
   pull_request:                           # on a pull request which targets main...
     branches:
     - main
