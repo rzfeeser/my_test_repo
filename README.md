@@ -1,6 +1,6 @@
 # batmanAPI
 
-A minimal Python command-line project that displays a welcome message.
+A minimal Python command-line project that displays a welcome message. 
 
 ## About
 
