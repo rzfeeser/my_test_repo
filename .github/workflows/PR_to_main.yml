@@ -2,6 +2,9 @@ on:                                       # triggering conditions
   pull_request:                           # on a pull request which targets main...
     branches:
     - main
+    paths-ignore:
+    - README.md
+    - '.github/**'
 
 jobs:                                     # this is just the start of the pipeline
   lint_python:                            # this is a job in our pipeline
